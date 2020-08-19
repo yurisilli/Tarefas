@@ -17,12 +17,13 @@ export class ListarTarefasComponent implements OnInit {
 
   listarTodas(): Tarefa[] {
 
-    //return this.tarefaService.listasTodas();      
-    let tarefas: Tarefa[] = [
-      { id: 1, descricao: "Zovo", concluida: false },
-      { id: 2, descricao: "Zovinho", concluida: true },
-    ]
-    return tarefas;
+    // let tarefas: Tarefa[] = [
+    //   { id: 1, descricao: "Registro 1", concluida: false },
+    //   { id: 2, descricao: "Registro 2", concluida: true },
+    // ];
+    //return tarefas;
+    return this.tarefaService.listasTodas();      
+ 
   }
 
 }
