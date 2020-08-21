@@ -26,4 +26,8 @@ export class ListarTarefasComponent implements OnInit {
  
   }
 
+  deletar(): void {
+    //this.tarefaService.deletar(tarefa.id);
+  }
+
 }

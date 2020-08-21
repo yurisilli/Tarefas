@@ -1,10 +1,11 @@
-<h1>Cadastrar tarefa</h1>
+<h1>Editar tarefa</h1>
 
 <div class="well">
     <form #formTarefa="ngForm">
         <div class="form-group">
             <label for="descricao">Tarefa:</label>
-            <input [(ngModel)]="tarefa.descricao" #descricao="ngModel" type="text" class="form-control" id="nome" name="nome" minlength="5" required>
+            <input [(ngModel)]="tarefa.descricao" #descricao="ngModel" type="text" class="form-control" id="nome"
+                name="nome" minlength="5" required>
             <div *ngIf="descricao.errors && (descricao.dirty || descricao.touched)" class="alert alert-danger">
                 <div [hidden]="!descricao.errors.required">
                     Digite a tarefa.
@@ -15,7 +16,7 @@
             </div>
         </div>
         <div class="form-group text-center">
-            <input [disabled]="!formTarefa.form.valid" (click)="cadastrar()" type="submit" class="btn btn-success" value="Cadastrar">
+            <input [disabled]="!formTarefa.form.valid" (click)="atualizar()" type="submit" class="btn btn-success" value="Atualizar">
             <a [routerLink]="['/tarefas/listar']" class="btn btn-default">
                 <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Voltar
             </a>
