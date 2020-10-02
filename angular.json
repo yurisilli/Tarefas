@@ -120,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ng-tarefas"
+    }
+  },
+  "defaultProject": "ng-tarefas",
+  "cli": {
+    "analytics": "e4f0ed4f-f877-4f88-9680-99855ac3d667"
+  }
 }
